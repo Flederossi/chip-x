@@ -41,6 +41,10 @@ Example - Set register 1 to 255:
 |`11`|reg for color|- Set the current color (0: red, 1: green, 2: bluew)|`11 01`|- Sets the current color to the value of register 1|
 |`12`|--|- Clear the screen|`12`|- Clears the screen
 |**Math**|
+|`20`|reg 1, reg 2|- Add the value of the second register to first register|`20 01 02`|- Adds register 2 to register 1|
+|`21`|reg 1, reg 2|- Subtract the value of the second register from the first register|`21 01 02`|- Subtracts register 2 from register 1|
+|`22`|reg 1, reg 2|- Multiply the value of the second register with the first register|`22 01 02`|- Multiplies register 2 with register 1|
+|`23`|reg 1, reg 2|- Divide the first register by the value of the second register|`23 01 02`|- Divide register 1 by register 2|
 |**Keyboard**|
 |--|--|- The keyboard input is written to register 255 every frame (1: up, 2: right, 3: down, 4: left)|--|--|
 |**Indicators**|

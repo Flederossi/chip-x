@@ -24,7 +24,8 @@ make
 
 *Other platforms are added in the future.*
 
-## Instructions
+## Language
+The language the fantasy console uses is based on instructions.
 A simple instruction looks like this:
 ```
 [hex value of the instruction] [hex values of the parameters]

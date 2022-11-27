@@ -3,7 +3,3 @@ chip-x:
 
 clean:
 	del bin\chip-x.exe
-
-run:
-	make
-	./bin/chip-x src/images/test.cx

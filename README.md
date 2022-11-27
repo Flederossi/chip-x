@@ -20,6 +20,8 @@ make
 
 - The binary now should be in the bin/ folder.
 
+Other platforms are added in the future.
+
 ## Commands
 A simple command looks like this:
 ```

@@ -29,7 +29,7 @@ Example - Set register 1 to 255:
 ```
 00 01 FF
 ```
-You can seperate each command and parameter as you want but don't seperate the two hex values of the command or parameter itself.
+You can seperate each command and parameter as you wish but don't seperate the two hex values of the command or parameter itself.
 ### Available commands
 |Command|Parameters|Description|Example|Explanation|
 |-------|----------|-----------|-------|-----------|

@@ -55,7 +55,7 @@ You can seperate each instruction and parameter as you wish but don't seperate t
 |`FF`|--|Start of the loop section (code before statement only executed on start, code after executed every frame)|`00 01 00 00 02 01 FF 20 01 02`|*Sets up the registers on start, then adds register 2 to register 1 every frame*|
 
 ## Example
-*Note: The commands are only for explainatory purpose. If you want to use the program don't copy it from here, use the one without commands in the example/ folder. There is the chance that the commands distract the interpreter of the fantasy console. (This should be fixed in the future ^^)*
+*Note: The commands are only for explainatory purpose. If you want to use the program don't copy it from here, use the one without commands in example/example.cx. There is the chance that the commands distract the interpreter of the fantasy console. (This should be fixed in the future ^^)*
 ### Code
 ```
 00 00 01            // Set reg 0 to 1
@@ -78,5 +78,11 @@ FF                  // Start the loop section (the next part is called every fra
 20 01 0A            // Add reg 10 (value 1) to reg 1 (x value of the drawn pixel)
 EE                  // End of the if statement
 ```
+### Run
+Run the script:
+```
+chip-x example.cx
+```
 ### Result
-The pixel moves to the right every time the right arrow key is pressed.
+Now a window should show up and the now rendered pixel should move to the right every time the right arrow key is pressed.
+

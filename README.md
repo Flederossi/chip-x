@@ -1,8 +1,8 @@
 # chip-x
 A tiny fantasy console written in C using SDL2.
 
-It uses a minimal hex based language which let's you create small graphical applications and games.
-It also includes a small keyboard engine to receive user input.
+*It uses a minimal hex based language which let's you create small graphical applications and games.
+It also includes a small keyboard engine to receive user input.*
 
 ## Usage
 ```
@@ -20,7 +20,7 @@ make
 
 - The binary now should be in the bin/ folder.
 
-Other platforms are added in the future.
+*Other platforms are added in the future.*
 
 ## Commands
 A simple command looks like this:

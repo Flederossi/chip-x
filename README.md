@@ -33,16 +33,16 @@ Example - Set register 1 to 255:
 |Command|Parameters|Description|Example|Explanation|
 |-------|----------|-----------|-------|-----------|
 |**Main**|
-|`00`|reg, value|- Set a register to a specific value|00 01 FF|- Sets the register 1 to 255|
-|`01`|reg|- If register equals zero (jump to next EE if not)|01 01 [Your code if reg equals zero] EE|- Runs the code if register 1 equals zero|
-|`02`|reg|- If register is not zero (jump to next EE if not)|02 01 [Your code if reg is not zero] EE|- Runs the code if register 1 is not zero|
+|`00`|reg, value|- Set a register to a specific value|`00 01 FF`|- Sets the register 1 to 255|
+|`01`|reg|- If register equals zero (jump to next EE if not)|`01 01 [Your code if reg equals zero] EE`|- Runs the code if register 1 equals zero|
+|`02`|reg|- If register is not zero (jump to next EE if not)|`02 01 [Your code if reg is not zero] EE`|- Runs the code if register 1 is not zero|
 |**Screen**|
-|`10`|reg for x, reg for y|- Set a pixel on the screen to the current color|10 01 02|- Draws a pixel on the x and y value of register 1 and 2|
-|`11`|reg for color|- Set the current color (0: red, 1: green, 2: bluew)|11 01|- Sets the current color to the value of register 1|
-|`12`|--|- Clear the screen|12|- Clears the screen
+|`10`|reg x, reg y|- Set a pixel on the screen to the current color|`10 01 02`|- Draws a pixel on the x and y value of register 1 and 2|
+|`11`|reg for color|- Set the current color (0: red, 1: green, 2: bluew)|`11 01`|- Sets the current color to the value of register 1|
+|`12`|--|- Clear the screen|`12`|- Clears the screen
 |**Math**|
 |**Keyboard**|
 |--|--|- The keyboard input is written to register 255 every frame (1: up, 2: right, 3: down, 4: left)|--|--|
 |**Indicators**|
-|`EE`|--|- End of the if statement|01 01 [code] EE|- Jumps to EE when register 1 is not zero
-|`FF`|--|- Start of the loop section (code before statement only executed on start, code after executed every frame)|00 01 00 00 02 01 FF 20 01 02|- Sets up the registers on start, then adds register 2 to register 1 every frame| 
+|`EE`|--|- End of the if statement|`01 01 [code] EE`|- Jumps to EE when register 1 is not zero
+|`FF`|--|- Start of the loop section (code before statement only executed on start, code after executed every frame)|`00 01 00 00 02 01 FF 20 01 02`|- Sets up the registers on start, then adds register 2 to register 1 every frame| 

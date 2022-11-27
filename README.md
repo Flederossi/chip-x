@@ -4,6 +4,8 @@ A tiny fantasy console written in C using SDL2.
 *It uses a minimal hex based language which let's you create small graphical applications and games.
 It also includes a small keyboard engine to receive user input.*
 
+![Alt Text](https://github.com/Flederossi/chip-x/blob/main/example/result.gif)
+
 ## Usage
 ```
 chip-x [hex-file]

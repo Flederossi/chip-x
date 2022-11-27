@@ -35,7 +35,7 @@ Example - Set register 1 to 255:
 ```
 00 01 FF
 ```
-You can seperate each instruction and parameter as you wish but don't seperate the two hex values of the instruction or parameter itself.
+*You can seperate each instruction and parameter as you wish but don't seperate the two hex values of the instruction or parameter itself.*
 ### Available instructions
 |Instruction|Parameters|Description|Example|Explanation|
 |-----------|----------|-----------|-------|-----------|

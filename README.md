@@ -41,7 +41,7 @@ You can seperate each instruction and parameter as you wish but don't seperate t
 |`02`|reg|If register is not zero (jump to next EE if not)|`02 01 [Your code if reg is not zero] EE`|*Runs the code if register 1 is not zero*|
 |**Screen**|
 |`10`|reg x, reg y|Set a pixel on the screen to the current color|`10 01 02`|*Draws a pixel on the x and y value of register 1 and 2*|
-|`11`|reg for color|Set the current color (0: red, 1: green, 2: bluew)|`11 01`|*Sets the current color to the value of register 1*|
+|`11`|reg for color|Set the current color (0: red, 1: green, 2: blue)|`11 01`|*Sets the current color to the value of register 1*|
 |`12`|--|Clear the screen|`12`|*Clears the screen*|
 |**Math**|
 |`20`|reg 1, reg 2|Add the value of the second register to first register|`20 01 02`|*Adds register 2 to register 1*|

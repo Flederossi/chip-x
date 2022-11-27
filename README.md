@@ -22,19 +22,19 @@ make
 
 *Other platforms are added in the future.*
 
-## Commands
-A simple command looks like this:
+## Instructions
+A simple instruction looks like this:
 ```
-[hex value of the command] [hex values of the parameters]
+[hex value of the instruction] [hex values of the parameters]
 ```
 Example - Set register 1 to 255:
 ```
 00 01 FF
 ```
-You can seperate each command and parameter as you wish but don't seperate the two hex values of the command or parameter itself.
-### Available commands
-|Command|Parameters|Description|Example|Explanation|
-|-------|----------|-----------|-------|-----------|
+You can seperate each instruction and parameter as you wish but don't seperate the two hex values of the instruction or parameter itself.
+### Available instructions
+|Instruction|Parameters|Description|Example|Explanation|
+|-----------|----------|-----------|-------|-----------|
 |**Main**|
 |`00`|reg, value|Set a register to a specific value|`00 01 FF`|*Sets the register 1 to 255*|
 |`01`|reg|If register equals zero (jump to next EE if not)|`01 01 [Your code if reg equals zero] EE`|*Runs the code if register 1 equals zero*|
@@ -55,7 +55,8 @@ You can seperate each command and parameter as you wish but don't seperate the t
 |`FF`|--|Start of the loop section (code before statement only executed on start, code after executed every frame)|`00 01 00 00 02 01 FF 20 01 02`|*Sets up the registers on start, then adds register 2 to register 1 every frame*|
 
 ## Example
-*Note: The commands are only for explainatory purpose. If you want to use the program don't copy it from here, use the one in the example/ folder. There is the chance that the commands distract the interpreter of the fantasy console. (This should be fixed in the future ^^)*
+*Note: The commands are only for explainatory purpose. If you want to use the program don't copy it from here, use the one without commands in the example/ folder. There is the chance that the commands distract the interpreter of the fantasy console. (This should be fixed in the future ^^)*
+### Code
 ```
 00 00 01            // Set reg 0 to 1
 11 00               // Set color to reg 0 (value 1 -> green)
@@ -77,3 +78,5 @@ FF                  // Start the loop section (the next part is called every fra
 20 01 0A            // Add reg 10 (value 1) to reg 1 (x value of the drawn pixel)
 EE                  // End of the if statement
 ```
+### Result
+The pixel moves to the right every time the right arrow key is pressed.

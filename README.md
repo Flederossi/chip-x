@@ -29,3 +29,8 @@ Example - Set register 1 to 255:
 ```
 00 01 FF
 ```
+### Available commands
+|Command|Parameters|Function|Example|
+|-------|----------|--------|-------|
+|00|reg, value|Set a register to a specific value|00 01 FF|
+|01|reg|If register equals zero (jump to next EE if not)|01 01 [Your code] EE|

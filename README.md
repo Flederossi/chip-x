@@ -14,10 +14,10 @@ chip-x [hex-file]
 - First install https://github.com/libsdl-org/SDL and put the include files in the src/include and the lib file in the src/lib folder.
 
 - Then run
-- ```
-- make
-- ```
-- in the root folder.
+```
+make
+```
+in the root folder.
 
 - The binary now should be in the bin/ folder.
 

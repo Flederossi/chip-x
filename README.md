@@ -20,7 +20,7 @@ make
 
 - The binary now should be in the bin/ folder.
 
-## Comands
+## Commands
 A simple command looks like this:
 ```
 [hex value of the command] [hex values of the parameters]
@@ -29,6 +29,7 @@ Example - Set register 1 to 255:
 ```
 00 01 FF
 ```
+You can seperate each command and parameter as you want but don't seperate the two hex values of the command or parameter itself.
 ### Available commands
 |Command|Parameters|Description|Example|Explanation|
 |-------|----------|-----------|-------|-----------|

@@ -84,5 +84,6 @@ Run the script:
 chip-x example.cx
 ```
 ### Result
-Now a window should show up and the now rendered pixel should move to the right every time the right arrow key is pressed.
+Now a window should show up and the now rendered pixel should move to the right every time the right arrow key is pressed:
+
 ![Alt Text](https://github.com/Flederossi/chip-x/blob/main/example/result.gif)

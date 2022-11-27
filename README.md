@@ -12,6 +12,7 @@ chip-x [hex-file]
 ## Compile
 ### Windows
 First install https://github.com/libsdl-org/SDL and put the include files in the src/include and the lib file in the src/lib folder.
+
 Then run
 ```
 make

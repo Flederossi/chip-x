@@ -42,7 +42,7 @@ Example - Set register 1 to 255:
 |12|-|- Clear the screen|12|- Clears the screen
 |Math|
 |Keyboard|
-|--|-|- The keyboard input is written to register 255 every frame (1: up, 2: right, 3: down, 4: left)|--|---|
+|--|--|- The keyboard input is written to register 255 every frame (1: up, 2: right, 3: down, 4: left)|--|--|
 |Indicators|
-|EE|-|- End of the if statement|01 01 [code] EE|- Jumps to EE when register 1 is not zero
-|FF|-|- Start of the loop section (code before statement only executed on start, code after executed every frame)|00 01 00 00 02 01 FF 20 01 02|- Sets up the registers on start, then adds register 2 to register 1 every frame| 
+|EE|--|- End of the if statement|01 01 [code] EE|- Jumps to EE when register 1 is not zero
+|FF|--|- Start of the loop section (code before statement only executed on start, code after executed every frame)|00 01 00 00 02 01 FF 20 01 02|- Sets up the registers on start, then adds register 2 to register 1 every frame| 

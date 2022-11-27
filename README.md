@@ -1,8 +1,8 @@
 # chip-x
 A tiny fantasy console written in C using SDL2.
 
-*It features a minimal hex based interpreted scripting language which let's you create small graphical applications and games in a resolution of 64x64 with a color pallete consistent of 3 different colors: red, green and blue.*
-It also includes a small keyboard engine to receive user input.
+*It features a minimal hex based interpreted scripting language which let's you create small graphical applications and games in a resolution of 64x64 with a color pallete consistent of 3 different colors: red, green and blue.
+It also includes a small keyboard engine to receive user input.*
 
 ![Alt Text](https://github.com/Flederossi/chip-x/blob/main/img/logo.png)
 

@@ -18,6 +18,7 @@ Then run
 make
 ```
 in the root folder.
+
 The binary now should be in the bin/ folder.
 
 ## Comands
